@@ -123,7 +123,7 @@ sphinx-lint:
 $(POSPELL_TMP_DIR)/%.po.out: %.po dict
 	@echo "Pospell checking $<..."
 	@mkdir -p $(@D)
-	pospell -p dict -l tr_TR $< && touch $@
+	pospell -p dict -l uz_UZ $< && touch $@
 
 .PHONY: fuzzy
 fuzzy: ensure_prerequisites
